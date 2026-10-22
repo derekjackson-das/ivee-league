@@ -305,3 +305,11 @@ details[open] summary { font-weight: 600; }
 section.hero { padding: 0; }
 .about-grid { display: grid; gap: var(--space-3); align-items: start; }
 @media (min-width: 48rem) { .about-grid { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); } }
+.stepper button[aria-disabled="true"] { color: var(--muted); cursor: not-allowed; }
+.choice:has(input:disabled) { color: var(--muted); }
+#estimate-breakdown { max-width: 36rem; margin-bottom: var(--space-3); }
+.result[data-status="error"] { border-left-color: var(--error); }
+.summary-list { display: grid; grid-template-columns: minmax(8rem, max-content) 1fr; gap: 0.5rem var(--space-2); max-width: 48rem; }
+.summary-list dt { font-weight: 600; }
+.summary-list dd { margin: 0; white-space: pre-line; overflow-wrap: anywhere; }
+@media (max-width: 40rem) { .summary-list { grid-template-columns: 1fr; } .summary-list dd { margin-bottom: var(--space-1); } }
