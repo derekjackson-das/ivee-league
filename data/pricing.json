@@ -1,0 +1,51 @@
+{
+  "note": "Sample pricing for demo purposes. Ivee League Wedding Photography is fictional.",
+  "currency": "USD",
+  "estimateSpread": {
+    "low": 0,
+    "high": 0.15,
+    "roundTo": 50,
+    "explanation": "Final quotes vary with the timeline, number of locations, and season. The high end of the range covers those adjustments."
+  },
+  "tiers": [
+    {
+      "id": "elopement",
+      "name": "Elopement",
+      "basePrice": 1800,
+      "includedHours": 3,
+      "maxHours": 5,
+      "secondShooterAllowed": false,
+      "summary": "Intimate ceremonies and city hall weddings. One photographer, up to 3 hours, online gallery."
+    },
+    {
+      "id": "half-day",
+      "name": "Half Day",
+      "basePrice": 3200,
+      "includedHours": 6,
+      "maxHours": 8,
+      "secondShooterAllowed": true,
+      "summary": "Ceremony through the first dances. One photographer, 6 hours, online gallery, print release."
+    },
+    {
+      "id": "full-day",
+      "name": "Full Day",
+      "basePrice": 4800,
+      "includedHours": 10,
+      "maxHours": 12,
+      "secondShooterAllowed": true,
+      "summary": "Getting ready through the send-off. One photographer, 10 hours, online gallery, print release, engagement session included."
+    }
+  ],
+  "addOns": {
+    "extraHour": { "label": "Additional hour of coverage", "price": 350 },
+    "secondShooter": { "label": "Second photographer", "price": 600 },
+    "engagementSession": { "label": "Engagement session", "price": 450, "includedInTiers": ["full-day"] },
+    "album": { "label": "Heirloom album (10 by 10 inches, 30 pages)", "price": 900 }
+  },
+  "travelBands": [
+    { "id": "local", "label": "Within 25 miles of Cambridge", "price": 0 },
+    { "id": "regional", "label": "25 to 60 miles (North Shore, South Shore, Worcester, southern New Hampshire)", "price": 150 },
+    { "id": "extended", "label": "60 to 120 miles (Cape Cod, Rhode Island, the Berkshires)", "price": 350 },
+    { "id": "far", "label": "More than 120 miles (the Islands, Vermont, Maine, out of state)", "price": 600, "note": "Lodging quoted separately." }
+  ]
+}
