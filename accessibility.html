@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility statement · Ivee League Wedding Photography</title>
+  <meta name="description" content="Ivee League Wedding Photography aims for WCAG 2.2 Level AA on every page. Known issues and how to report a problem.">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <p class="demo-notice">This is a demo site. Ivee League Wedding Photography is fictional.</p>
+    <div class="container">
+      <a class="brand" href="index.html">Ivee League <small>Wedding Photography · Cambridge, Massachusetts</small></a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="calculator.html">Cost calculator</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="inquire.html" class="nav-cta">Inquire</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <section class="container">
+      <h1>Accessibility statement</h1>
+      <div class="narrow flow">
+        <p class="lede">This site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at Level AA on every page.</p>
+
+        <h2>What that means in practice</h2>
+        <ul>
+          <li>Every photograph has a text description of the moment and the people in it. Purely decorative images are hidden from assistive technology.</li>
+          <li>Text over the home page photograph sits on a dark overlay so it meets the 4.5:1 contrast ratio against any part of the image.</li>
+          <li>Nothing moves on its own. There is no autoplay carousel or video, and any animation respects your reduced-motion setting.</li>
+          <li>Every control works by keyboard and shows a visible focus indicator. Interactive targets are at least 24 by 24 CSS pixels.</li>
+          <li>The portfolio lightbox is a modal dialog: focus moves in, stays in, Escape closes it, and focus returns to where you were.</li>
+          <li>Forms have visible labels, mark required fields in text, and list any errors at the top with links to the fields.</li>
+          <li>The date checker and cost calculator announce their results through a live region without moving your focus.</li>
+          <li>Pages have one main heading, a logical heading order, landmark regions, and a skip link.</li>
+          <li>Pages work at 320 CSS pixels wide and at 200 percent text size without horizontal scrolling.</li>
+        </ul>
+
+        <h2>How we test</h2>
+        <p>Every page is checked with axe DevTools and by a keyboard-only pass. Screen reader testing with NVDA in Firefox and VoiceOver in Safari on iOS, plus a zoom and reflow check, is scheduled for after the hackathon build.</p>
+
+        <h2>Known issues</h2>
+        <ul>
+          <li>Photographs are currently placeholders while licensed images are sourced. Their text descriptions describe the intended photograph, not the placeholder.</li>
+          <li>Screen reader testing has not yet been completed. Findings will be listed here.</li>
+        </ul>
+
+        <h2>Tell us about a problem</h2>
+        <p>If anything on this site is hard to use, email <a href="mailto:hello@iveeleague.example?subject=Website%20accessibility">hello@iveeleague.example</a> with the page address and what happened. You'll get a reply within two business days. Please note this is a demo site, so the address is fictional too.</p>
+
+        <p class="muted">Statement last reviewed 22 October 2026.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <h2>Contact</h2>
+        <address>
+          Steven Walker Junior<br>
+          Studio by appointment, Cambridge, Massachusetts 02139<br>
+          <a href="tel:+16175550142">617-555-0142</a><br>
+          <a href="mailto:hello@iveeleague.example">hello@iveeleague.example</a>
+        </address>
+      </div>
+      <div>
+        <h2>Service area</h2>
+        <p>Cambridge and Boston, Greater Boston, the North and South Shores, Cape Cod and the Islands, the Berkshires, southern New Hampshire, and Rhode Island. Farther afield by quote.</p>
+      </div>
+      <div>
+        <h2>Elsewhere</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/iveeleague.demo">Instagram (placeholder account)</a></li>
+          <li><a href="https://www.pinterest.com/iveeleaguedemo">Pinterest (placeholder account)</a></li>
+          <li><a href="client-login.html">Client login</a></li>
+          <li><a href="accessibility.html">Accessibility statement</a></li>
+        </ul>
+      </div>
+      <p class="footer-legal">This is a demo site. Ivee League Wedding Photography is fictional. Nothing submitted through this site is stored or sent anywhere. Prices, dates, and testimonials are samples. Built in plain HTML, CSS, and JavaScript to WCAG 2.2 AA.</p>
+    </div>
+  </footer>
+</body>
+</html>
