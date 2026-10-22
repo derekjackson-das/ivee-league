@@ -31,7 +31,8 @@ function show(li) {
   const list = visible();
   const source = li.querySelector('img');
   current = list.indexOf(li);
-  img.src = source.currentSrc || source.src;
+  // The grid loads a 600px copy; the dialog shows the full-size file.
+  img.src = source.dataset.full || source.currentSrc || source.src;
   img.alt = source.alt;
   img.width = source.width;
   img.height = source.height;
